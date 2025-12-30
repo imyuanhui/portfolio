@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import type { ReactNode, MouseEventHandler, FormEvent } from "react";
 import { motion } from "framer-motion";
 import {
   Github,
@@ -257,13 +258,53 @@ function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-function Section({ id, title, subtitle, children }) {
+// function Section({ id, title, subtitle, children }) {
+//   return (
+//     <section id={id} className="scroll-mt-24">
+//       <div className="mb-6">
+//         <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
+//         {subtitle ? (
+//           <p className="mt-1 text-sm text-muted-foreground max-w-3xl">{subtitle}</p>
+//         ) : null}
+//       </div>
+//       {children}
+//     </section>
+//   );
+// }
+
+// function TagChip({ label, active, onClick }) {
+//   return (
+//     <button
+//       type="button"
+//       onClick={onClick}
+//       className={cn(
+//         "inline-flex items-center rounded-full border px-3 py-1 text-xs transition",
+//         active
+//           ? "bg-foreground text-background"
+//           : "bg-background hover:bg-muted"
+//       )}
+//       aria-pressed={active}
+//     >
+//       {label}
+//     </button>
+//   );
+// }
+type SectionProps = {
+  id: string;
+  title: string;
+  subtitle?: string;
+  children: ReactNode;
+};
+
+function Section({ id, title, subtitle, children }: SectionProps) {
   return (
     <section id={id} className="scroll-mt-24">
       <div className="mb-6">
         <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
         {subtitle ? (
-          <p className="mt-1 text-sm text-muted-foreground max-w-3xl">{subtitle}</p>
+          <p className="mt-1 text-sm text-muted-foreground max-w-3xl">
+            {subtitle}
+          </p>
         ) : null}
       </div>
       {children}
@@ -271,23 +312,28 @@ function Section({ id, title, subtitle, children }) {
   );
 }
 
-function TagChip({ label, active, onClick }) {
+type TagChipProps = {
+  label: string;
+  active: boolean;
+  onClick: MouseEventHandler<HTMLButtonElement>;
+};
+
+function TagChip({ label, active, onClick }: TagChipProps) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={cn(
+      className={[
         "inline-flex items-center rounded-full border px-3 py-1 text-xs transition",
-        active
-          ? "bg-foreground text-background"
-          : "bg-background hover:bg-muted"
-      )}
+        active ? "bg-foreground text-background" : "bg-background hover:bg-muted",
+      ].join(" ")}
       aria-pressed={active}
     >
       {label}
     </button>
   );
 }
+
 
 export default function PortfolioPage() {
   const [tagFilter, setTagFilter] = useState("All");
@@ -325,7 +371,7 @@ export default function PortfolioPage() {
     message: "",
   });
 
-  async function onSubmitContact(e) {
+  async function onSubmitContact(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     const payload = {
