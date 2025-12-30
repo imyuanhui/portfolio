@@ -14,7 +14,6 @@ import {
   Server,
   Cloud,
   Code2,
-  Cpu,
   Phone,
 } from "lucide-react";
 
