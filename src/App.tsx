@@ -58,7 +58,7 @@ const PROFILE = {
   github: "https://github.com/imyuanhui",
   about:
     "I have a Master's degree in Computer Science from University College Dublin, with a focus on software engineering and cutting-edge cloud & AI technologies. I am passionate about building scalable and efficient software solutions to solve real-world problems. Currently, I am seeking full-time opportunities in software development or DevOps roles where I can contribute my skills and grow professionally.",
-  cvUrl: "https://drive.google.com/file/d/1J0BcUKJm6490oDigolGqsoV0sb82eIag/view?usp=sharing", // put cv.pdf in your public folder, or point to Google Drive / S3
+  cvUrl: "https://drive.google.com/file/d/1AwkWCip7WOp8-Vxmr59jZkbbRmBZa_k4/view?usp=sharing", // put cv.pdf in your public folder, or point to Google Drive / S3
   // Optional hero image (drop a file into your project and reference it here)
   heroImageUrl: "", // e.g., "/headshot.jpg"
 };
