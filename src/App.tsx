@@ -50,7 +50,7 @@ import { Separator } from "@/components/ui/separator";
 // ============================
 const PROFILE = {
   name: "Yuanhui Xu",
-  title: "Hi, I'm Yuanhui",
+  title: "Hi, I'm Yuanhui 👋",
   base: "Dublin, Ireland",
   email: "xuyuanhui37@gmail.com",
   phone: "+353 89 201 6899",
@@ -58,8 +58,8 @@ const PROFILE = {
   linkedin: "https://www.linkedin.com/in/yuanhui-xu-6679b528b",
   github: "https://github.com/imyuanhui",
   about:
-    "I have a Master's degree in Computer Science from University College Dublin, with a focus on cloud computing and distributed systems. I am passionate about building scalable and efficient software solutions. Currently, I am seeking full-time opportunities in software engineering, backend development, or DevOps roles where I can contribute my skills and grow professionally.",
-  cvUrl: "https://drive.google.com/file/d/1KrVZtbPDfDj02P8IAPIKmi431hXKRJG5", // put cv.pdf in your public folder, or point to Google Drive / S3
+    "I have a Master's degree in Computer Science from University College Dublin, with a focus on software engineering and cutting-edge cloud & AI technologies. I am passionate about building scalable and efficient software solutions to solve real-world problems. Currently, I am seeking full-time opportunities in software development or DevOps roles where I can contribute my skills and grow professionally.",
+  cvUrl: "https://drive.google.com/file/d/1J0BcUKJm6490oDigolGqsoV0sb82eIag/view?usp=sharing", // put cv.pdf in your public folder, or point to Google Drive / S3
   // Optional hero image (drop a file into your project and reference it here)
   heroImageUrl: "", // e.g., "/headshot.jpg"
 };
@@ -139,7 +139,7 @@ const PROJECTS = [
   {
     id: "p3",
     name: "WhisperWall",
-    oneLiner: "An anonymous blogging platform for open expression",
+    oneLiner: "An anonymous blogging platform for open, identity-free expression, enabling user interaction and providing administrators with management tools for users, posts, and comments.",
     techStack: ["TypeScript", "Node.js", "Express", "React", "MongoDB", "Docker", "JWT", "OAuth2", "Firebase", "Redux", "Tailwind CSS"],
     tags: ["CI/CD", "Security", "API Design", "Database Design", "Testing", "Responsive UI"],
     thumbnailUrl: "p3.jpg",
@@ -148,23 +148,33 @@ const PROJECTS = [
   },
   {
     id: "p4",
-    name: "WhisperWall",
-    oneLiner: "An anonymous blogging platform for open expression",
-    techStack: ["TypeScript", "Node.js", "Express", "React", "MongoDB", "Docker", "JWT", "OAuth2", "Firebase", "Redux", "Tailwind CSS"],
-    tags: ["CI/CD", "Security", "API Design", "Database Design", "Testing", "Responsive UI"],
-    thumbnailUrl: "p3.jpg",
-    githubUrl: "https://github.com/imyuanhui/WhisperWall",
-    liveUrl: "https://whisperwall-d2ry.onrender.com/",
+    name: "End-to-End Cloud-Native Healthcare Analytics Pipeline",
+    oneLiner: "A fully cloud-native analytics pipeline, enabling scalable and secure analysis of large-scale clinical readmission data.",
+    techStack: ["Python", "Hadoop MapReduce", "Pyspark", "Dataproc", "GCS", "BigQuery", "LookerStudio"],
+    tags: ["Cloud", "GCP", "Big Data"],
+    thumbnailUrl: "p4.jpg",
+    githubUrl: "",
+    liveUrl: "",
   },
   {
     id: "p5",
-    name: "WhisperWall",
-    oneLiner: "An anonymous blogging platform for open expression",
-    techStack: ["TypeScript", "Node.js", "Express", "React", "MongoDB", "Docker", "JWT", "OAuth2", "Firebase", "Redux", "Tailwind CSS"],
-    tags: ["CI/CD", "Security", "API Design", "Database Design", "Testing", "Responsive UI"],
-    thumbnailUrl: "p3.jpg",
-    githubUrl: "https://github.com/imyuanhui/WhisperWall",
-    liveUrl: "https://whisperwall-d2ry.onrender.com/",
+    name: "Dublin Bikes – Real-Time & Predictive Web App",
+    oneLiner: "A web app that visualizes real-time and forecasted bike availability, with built-in journey planning across Dublin’s public bike-sharing system.",
+    techStack: ["Python", "Flask", "JavaScript", "HTML/CSS", "MySQL", "AWS EC2", "Linear Regression", "Random Forest"],
+    tags: ["API Design", "Database Design", "Testing", "ML Pipelines"],
+    thumbnailUrl: "p5.jpg",
+    githubUrl: "https://github.com/imyuanhui/comp30830-group4",
+    liveUrl: "https://drive.google.com/file/d/1PkvOQU6m2fmazRwlxgVWh0_8SxZSFpqd/view?usp=sharing",
+  },
+  {
+    id: "p6",
+    name: "TradeSure",
+    oneLiner: "An escrow platform for safer, simpler second-hand electronics trading.",
+    techStack: ["TypeScript", "React Native", "Python", "Flask", "JWT", "Firebase", "ChatGPT-4", "OpenAI Version", "Stripe API"],
+    tags: ["API Design", "Database Design", "Security", "CI/CD", "LLM Integration"],
+    thumbnailUrl: "p6.jpg",
+    githubUrl: "https://github.com/samennis1/Team8",
+    liveUrl: "https://devpost.com/software/hackireland-2025-team-8-tradesure?ref_content=my-projects-tab&ref_feature=my_projects",
   },
 ];
 
@@ -180,7 +190,9 @@ const TIMELINE = [
     org: "University College Dublin",
     details: [
       "Relevant Coursework: Distributed Systems, Cloud Computing, Software Engineering, Information Security, Machine Learning With Python",
-      "Expected first-class honours",
+      "Awards: Hack Ireland 2025 - Runner-up in FinTech Track & Best Team Under 21",
+      "Excurricular Activities: UCD Women+ in STEM Society, UCD Mountaineering Club",
+      "Expected to graduate with First-Class Honours",
     ],
   },
     {
@@ -190,8 +202,7 @@ const TIMELINE = [
     title: "Demonstrator",
     org: "University College Dublin",
     details: [
-      "Mentored 60+ students, graded assignments, and ran weekly lab sessions",
-      "Created reference solutions and improved autograding reliability",
+      "Mentored 100+ students majoring in Computer Science, graded assignments, and ran weekly practical sessions.",
     ],
   },
   {
@@ -201,8 +212,13 @@ const TIMELINE = [
     title: "Software Engineering Intern",
     org: "Nanjing SkyTech",
     details: [
-      "Built backend APIs and reduced p95 latency by 25% via caching and query optimization",
-      "Implemented CI pipeline and improved deployment frequency from weekly to daily",
+      "Collaborated with agile, cross-functional teams to deliver 5 SaaS platforms for public-sector clients on schedule.",
+      "Contributed to the full software development lifecycle, including coding, testing, deployment, and maintenance.",
+      "Built and maintained 30+ reusable UI components with TypeScript, Vue.js, and Node.js, improving modularity and maintainability.",
+      "Partnered with senior engineers to debug production issues, ensuring platform reliability.",
+      "Integrated RESTful APIs with authentication, validation, and error handling, improving system stability.",
+      "Participated in code reviews, adopting best practices and improving overall code quality.",
+      "Implemented interactive data visualisations with ECharts, simplifying complex datasets for end users."
     ],
   },
   {
@@ -212,8 +228,9 @@ const TIMELINE = [
     title: "IT Support Volunteer",
     org: "AWDPI & Avoice",
     details: [
-      "Built backend APIs and reduced p95 latency by 25% via caching and query optimization",
-      "Implemented CI pipeline and improved deployment frequency from weekly to daily",
+      "Provided first-line technical support for internal teams, troubleshooting software and workflow issues.",
+      "Automated recruitment and task management workflows using Lark APIs.",
+      "Recommended process improvements and tool configurations."
     ],
   },
   {
@@ -222,17 +239,8 @@ const TIMELINE = [
     date: "2021 – 2024",
     title: "MFA Drama",
     org: "Nanjing University",
-    details: [],
-  },
-  {
-    id: "t6",
-    type: "experience",
-    date: "Jul 2023 – Oct 2023",
-    title: "Game Designing Intern",
-    org: "Perfect World Games",
     details: [
-      "Built backend APIs and reduced p95 latency by 25% via caching and query optimization",
-      "Implemented CI pipeline and improved deployment frequency from weekly to daily",
+      "Extracurricular Activities: Game Development Society, Game Jam",
     ],
   },
   {
@@ -242,7 +250,8 @@ const TIMELINE = [
     title: "BSc Ecology",
     org: "Sun Yat-sen University",
     details: [
-      "Relevant Coursework: R Prograa",
+      "Relevant Coursework: Programming Languages (R & Perl), Linear Algebra, Probability & Statistics",
+      "Awards: National Scholarship, First-Class Academic Scholarship",
     ],
   },
 ];
@@ -593,7 +602,7 @@ export default function PortfolioPage() {
         <Section
           id="projects"
           title="Projects"
-          subtitle="Cards with thumbnails, one-line summaries, tech stack, and quick links. Use tags to highlight keywords recruiters search for (Kubernetes, CI/CD, etc.)."
+          subtitle=""
         >
           <div className="flex flex-col gap-4">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
@@ -718,34 +727,31 @@ export default function PortfolioPage() {
         <Section
           id="timeline"
           title="Education & Experience"
-          subtitle="A split timeline: education on the left, experience on the right, aligned around a central spine."
+          subtitle=""
         >
-          <div className="relative">
-            {/* central spine */}
-            <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-border md:block" />
+          {(() => {
+            const educationItems = TIMELINE.filter((x) => x.type === "education");
+            const experienceItems = TIMELINE.filter((x) => x.type === "experience");
 
-            <div className="space-y-6">
-              {TIMELINE.map((item, idx) => {
-                const isEducation = item.type === "education";
-                const Icon = isEducation ? GraduationCap : Briefcase;
+            return (
+              <div className="grid gap-6 md:grid-cols-2 items-stretch">
+                {/* LEFT: Education */}
+                <div className="flex flex-col h-full">
 
-                return (
-                  <motion.div
-                    key={item.id}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.25 }}
-                    transition={{ duration: 0.25, delay: Math.min(idx * 0.03, 0.12) }}
-                    className="grid gap-4 md:grid-cols-[1fr_auto_1fr] md:items-start"
-                  >
-                    {/* left */}
-                    <div className={cn(isEducation ? "md:pr-8" : "md:pr-8 md:opacity-40")}
-                    >
-                      {isEducation ? (
-                        <Card>
+                  <div className="flex flex-col space-y-2 h-full justify-between">
+                    {educationItems.map((item, idx) => (
+                      <motion.div
+                        key={item.id}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.25 }}
+                        transition={{ duration: 0.25, delay: Math.min(idx * 0.03, 0.12) }}
+                        className="flex"
+                      >
+                        <Card className="flex flex-col w-full">
                           <CardHeader>
                             <CardTitle className="flex items-center gap-2 text-base">
-                              <Icon className="h-4 w-4" /> {item.title}
+                              <GraduationCap className="h-4 w-4" /> {item.title}
                             </CardTitle>
                             <div className="text-sm text-muted-foreground">
                               {item.org} • {item.date}
@@ -759,29 +765,28 @@ export default function PortfolioPage() {
                             </ul>
                           </CardContent>
                         </Card>
-                      ) : (
-                        <div className="hidden md:block" />
-                      )}
-                    </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
 
-                    {/* center dot */}
-                    <div className="flex items-start justify-center">
-                      <div className="mt-3 flex h-8 w-8 items-center justify-center rounded-full border bg-background shadow-sm">
-                        {isEducation ? (
-                          <Cpu className="h-4 w-4" />
-                        ) : (
-                          <Briefcase className="h-4 w-4" />
-                        )}
-                      </div>
-                    </div>
+                {/* RIGHT: Experience */}
+                <div className="flex flex-col h-full">
 
-                    {/* right */}
-                    <div className={cn(!isEducation ? "md:pl-8" : "md:pl-8 md:opacity-40")}>
-                      {!isEducation ? (
-                        <Card>
+                  <div className="flex flex-col space-y-2 h-full">
+                    {experienceItems.map((item, idx) => (
+                      <motion.div
+                        key={item.id}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.25 }}
+                        transition={{ duration: 0.25, delay: Math.min(idx * 0.03, 0.12) }}
+                        className="flex"
+                      >
+                        <Card className="flex flex-col w-full">
                           <CardHeader>
                             <CardTitle className="flex items-center gap-2 text-base">
-                              <Icon className="h-4 w-4" /> {item.title}
+                              <Briefcase className="h-4 w-4" /> {item.title}
                             </CardTitle>
                             <div className="text-sm text-muted-foreground">
                               {item.org} • {item.date}
@@ -795,37 +800,15 @@ export default function PortfolioPage() {
                             </ul>
                           </CardContent>
                         </Card>
-                      ) : (
-                        <div className="hidden md:block" />
-                      )}
-                    </div>
-
-                    {/* mobile view: show the opposite side item as normal cards */}
-                    <div className="md:hidden">
-                      <Card>
-                        <CardHeader>
-                          <CardTitle className="flex items-center gap-2 text-base">
-                            <Icon className="h-4 w-4" /> {item.title}
-                          </CardTitle>
-                          <div className="text-sm text-muted-foreground">
-                            {item.org} • {item.date}
-                          </div>
-                        </CardHeader>
-                        <CardContent>
-                          <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
-                            {item.details.map((d) => (
-                              <li key={d}>{d}</li>
-                            ))}
-                          </ul>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
         </Section>
+
 
         <div className="my-12">
           <Separator />
@@ -835,7 +818,7 @@ export default function PortfolioPage() {
         <Section
           id="contact"
           title="Contact Me"
-          subtitle="Send a message directly. For a real backend-free form, plug in a Formspree endpoint. Otherwise, it will open your email client via mailto."
+          subtitle=""
         >
           <div className="grid gap-6 md:grid-cols-[1fr_0.8fr]">
             <Card>
@@ -915,11 +898,11 @@ export default function PortfolioPage() {
                       </span>
                     ) : null}
                   </div>
-
+{/* 
                   <p className="text-xs text-muted-foreground">
                     Tip: set <span className="font-mono">FORMSPREE_ENDPOINT</span> at the top
                     to enable true form submissions without managing a server.
-                  </p>
+                  </p> */}
                 </form>
               </CardContent>
             </Card>
@@ -937,6 +920,12 @@ export default function PortfolioPage() {
                   >
                     <Mail className="h-4 w-4" /> {PROFILE.email}
                   </a>
+                </div>
+                <div className="space-y-1">
+                  <div className="text-xs font-medium text-muted-foreground">Mobile</div>
+                  <div className="inline-flex items-center gap-2 text-sm">
+                    <Phone className="h-4 w-4" /> {PROFILE.phone}
+                  </div>
                 </div>
                 <div className="space-y-1">
                   <div className="text-xs font-medium text-muted-foreground">Location</div>
@@ -958,17 +947,6 @@ export default function PortfolioPage() {
                       </a>
                     </Button>
                   </div>
-                </div>
-
-                <Separator />
-
-                <div className="rounded-lg border p-4 text-sm text-muted-foreground">
-                  <div className="mb-2 font-medium text-foreground">Recruiter-ready notes</div>
-                  <ul className="list-disc pl-5 space-y-1">
-                    <li>Keep 3–6 projects, each with clear impact and scope.</li>
-                    <li>Use tags aligned with job postings (e.g., Kubernetes, CI/CD, Java, AWS).</li>
-                    <li>Ensure every repo has a polished README and deploy instructions.</li>
-                  </ul>
                 </div>
               </CardContent>
             </Card>
