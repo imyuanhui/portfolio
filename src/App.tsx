@@ -31,6 +31,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 
 /**
@@ -254,9 +255,9 @@ const FORMSPREE_ENDPOINT = ""; // e.g., "https://formspree.io/f/xxxxxx" (leave b
 // ============================
 // Helpers
 // ============================
-function cn(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+// function cn(...classes) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 // function Section({ id, title, subtitle, children }) {
 //   return (
