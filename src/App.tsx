@@ -139,8 +139,8 @@ const PROJECTS = [
     id: "p3",
     name: "WhisperWall",
     oneLiner: "An anonymous blogging platform for open, identity-free expression, enabling user interaction and providing administrators with management tools for users, posts, and comments.",
-    techStack: ["TypeScript", "Node.js", "Express", "React", "MongoDB", "Docker", "JWT", "OAuth2", "Firebase", "Redux", "Tailwind CSS"],
-    tags: ["CI/CD", "Security", "API Design", "Database Design", "Testing", "Responsive UI"],
+    techStack: ["TypeScript", "Node.js", "Express", "React", "MongoDB", "Docker", "JWT", "OAuth2", "Firebase", "Redux", "Tailwind CSS", "Render"],
+    tags: ["CI/CD", "Security", "API Design", "Database Design", "Testing", "Responsive UI","Fullstack", "DevOps"],
     thumbnailUrl: "p3.jpg",
     githubUrl: "https://github.com/imyuanhui/WhisperWall",
     liveUrl: "https://whisperwall-d2ry.onrender.com/",
@@ -174,6 +174,16 @@ const PROJECTS = [
     thumbnailUrl: "p6.jpg",
     githubUrl: "https://github.com/samennis1/Team8",
     liveUrl: "https://devpost.com/software/hackireland-2025-team-8-tradesure?ref_content=my-projects-tab&ref_feature=my_projects",
+  },
+  {
+    id: "p7",
+    name: "Gloss",
+    oneLiner: "An AI-powered vocabulary assistant that helps intermediate-to-advanced English learners clarify meaning, usage, and context, and seamlessly organize new words in Notion.",
+    techStack: ["Python", "FastAPI", "CloudFlare", "Render", "OpenRouter API", "DeepSeek", "Notion API"],
+    tags: ["LLM Integration", "Prompt Engineering", "Multi-agent System", "CI/CD", "API Design"],
+    thumbnailUrl: "p7.jpg",
+    githubUrl: "https://github.com/imyuanhui/gloss",
+    liveUrl: "https://gloss.xuyuanhui.org/",
   },
 ];
 
