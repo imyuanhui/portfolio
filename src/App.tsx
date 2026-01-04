@@ -406,9 +406,7 @@ export default function PortfolioPage() {
         message: "Please provide your email and a message.",
       });
       return;
-    }
-
-    console.log("forme spree", FORMSPREE_ENDPOINT)
+    
 
     // Option A: Formspree (recommended)
     if (FORMSPREE_ENDPOINT) {
