@@ -57,7 +57,7 @@ const PROFILE = {
   linkedin: "https://www.linkedin.com/in/yuanhui-xu-6679b528b",
   github: "https://github.com/imyuanhui",
   about:
-    "I have a Master's degree in Computer Science from University College Dublin, with a focus on software engineering and cutting-edge cloud & AI technologies. I am passionate about building scalable and efficient software solutions to solve real-world problems. Currently, I am seeking full-time opportunities in software development or DevOps roles where I can contribute my skills and grow professionally.",
+    "I have a Master's degree in Computer Science from University College Dublin, with a focus on software engineering and cutting-edge cloud & AI technologies. I am passionate about building scalable and efficient software solutions to address real-world problems. Currently, I am seeking full-time opportunities in software development or DevOps roles where I can contribute my skills and grow professionally.",
   cvUrl: "https://drive.google.com/file/d/1AwkWCip7WOp8-Vxmr59jZkbbRmBZa_k4/view?usp=sharing", // put cv.pdf in your public folder, or point to Google Drive / S3
   // Optional hero image (drop a file into your project and reference it here)
   heroImageUrl: "", // e.g., "/headshot.jpg"
@@ -145,15 +145,15 @@ const PROJECTS = [
     githubUrl: "https://github.com/imyuanhui/WhisperWall",
     liveUrl: "https://whisperwall-d2ry.onrender.com/",
   },
-  {
-    id: "p4",
-    name: "End-to-End Cloud-Native Healthcare Analytics Pipeline",
-    oneLiner: "A fully cloud-native analytics pipeline, enabling scalable and secure analysis of large-scale clinical readmission data.",
-    techStack: ["Python", "Hadoop MapReduce", "Pyspark", "Dataproc", "GCS", "BigQuery", "LookerStudio"],
-    tags: ["Cloud", "GCP", "Big Data"],
-    thumbnailUrl: "p4.jpg",
-    githubUrl: "",
-    liveUrl: "",
+    {
+    id: "p7",
+    name: "Gloss",
+    oneLiner: "An AI-powered vocabulary assistant that helps intermediate-to-advanced English learners clarify meaning, usage, and context, and seamlessly organize new words in Notion.",
+    techStack: ["Python", "FastAPI", "CloudFlare", "Render", "OpenRouter API", "Notion API"],
+    tags: ["LLM Integration", "Prompt Engineering", "Multi-agent Pipeline", "CI/CD", "API Design"],
+    thumbnailUrl: "p7.jpg",
+    githubUrl: "https://github.com/imyuanhui/gloss",
+    liveUrl: "https://gloss.xuyuanhui.org/",
   },
   {
     id: "p5",
@@ -166,6 +166,16 @@ const PROJECTS = [
     liveUrl: "https://drive.google.com/file/d/1PkvOQU6m2fmazRwlxgVWh0_8SxZSFpqd/view?usp=sharing",
   },
   {
+    id: "p4",
+    name: "End-to-End Cloud-Native Healthcare Analytics Pipeline",
+    oneLiner: "A fully cloud-native analytics pipeline, enabling scalable and secure analysis of large-scale clinical readmission data.",
+    techStack: ["Python", "Hadoop MapReduce", "Pyspark", "Dataproc", "GCS", "BigQuery", "LookerStudio"],
+    tags: ["Cloud", "GCP", "Big Data"],
+    thumbnailUrl: "p4.jpg",
+    githubUrl: "https://github.com/imyuanhui/health-care-pipeline",
+    liveUrl: "https://github.com/imyuanhui/health-care-pipeline/blob/main/report.pdf",
+  },
+  {
     id: "p6",
     name: "TradeSure",
     oneLiner: "An escrow platform for safer, simpler second-hand electronics trading.",
@@ -174,16 +184,6 @@ const PROJECTS = [
     thumbnailUrl: "p6.jpg",
     githubUrl: "https://github.com/samennis1/Team8",
     liveUrl: "https://devpost.com/software/hackireland-2025-team-8-tradesure?ref_content=my-projects-tab&ref_feature=my_projects",
-  },
-  {
-    id: "p7",
-    name: "Gloss",
-    oneLiner: "An AI-powered vocabulary assistant that helps intermediate-to-advanced English learners clarify meaning, usage, and context, and seamlessly organize new words in Notion.",
-    techStack: ["Python", "FastAPI", "CloudFlare", "Render", "OpenRouter API", "DeepSeek", "Notion API"],
-    tags: ["LLM Integration", "Prompt Engineering", "Multi-agent System", "CI/CD", "API Design"],
-    thumbnailUrl: "p7.jpg",
-    githubUrl: "https://github.com/imyuanhui/gloss",
-    liveUrl: "https://gloss.xuyuanhui.org/",
   },
 ];
 
