@@ -268,7 +268,7 @@ const TIMELINE = [
 // ============================
 // 5) CONTACT FORM CONFIG
 // ============================
-const FORMSPREE_ENDPOINT = ""; // e.g., "https://formspree.io/f/xxxxxx" (leave blank to use mailto)
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mgovpgjn";
 
 // ============================
 // Helpers
@@ -407,6 +407,8 @@ export default function PortfolioPage() {
       });
       return;
     }
+
+    console.log("forme spree", FORMSPREE_ENDPOINT)
 
     // Option A: Formspree (recommended)
     if (FORMSPREE_ENDPOINT) {
